@@ -7,6 +7,9 @@ export const useUserStore = defineStore('user', () => {
   function setUser(newValue: User) {
     user.value = newValue
   }
+  function logout() {
+    user.value = { auth: false }
+  }
 
-  return { user, setUser }
+  return { user, setUser, logout }
 })
