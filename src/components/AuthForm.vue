@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-const handleSubmit = (e: Event) => {
+const handleSubmit = () => {
 
 }
 </script>
