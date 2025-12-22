@@ -16,12 +16,14 @@
   },
   "dependencies": {
     "@fontsource/roboto": "^5.2.9",
+    "@stylistic/eslint-plugin": "^5.6.1",
     "pinia": "^3.0.4",
     "vue": "^3.5.25",
     "vue-router": "^4.6.3",
     "vuetify": "^3.11.4"
   },
   "devDependencies": {
+    "@mdi/js": "^7.4.47",
     "@tsconfig/node24": "^24.0.3",
     "@types/node": "^24.10.1",
     "@vitejs/plugin-vue": "^6.0.2",
