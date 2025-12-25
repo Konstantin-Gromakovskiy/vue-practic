@@ -3,7 +3,7 @@ import { defineAsyncComponent } from 'vue'
 import LoaderComponent from '@/components/LoaderComponent.vue'
 import { useUserStore } from '@/stores/user.ts'
 import MainPage from '@/pages/MainPage.vue'
-import AppPosts from '@/pages/AppPosts.vue'
+import PostPage from '@/pages/PostPage.vue'
 
 const LoginPage = defineAsyncComponent({
   loader: () => import('@/pages/LoginPage.vue'),
@@ -15,7 +15,7 @@ const router = createRouter({
   routes: [
     { path: '/login', component: LoginPage },
     { path: '/', component: MainPage, meta: { requiresAuth: true } },
-    { path: '/posts', component: AppPosts, meta: { requiresAuth: true } },
+    { path: '/posts', component: PostPage, meta: { requiresAuth: true } },
   ],
 })
 
