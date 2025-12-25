@@ -15,7 +15,11 @@
 </template>
 
 <script setup lang="ts">
-const handleSubmit = () => {
+import { useAuth } from '@/shared/utils/useAuth'
 
+const { login } = useAuth()
+
+const handleSubmit = () => {
+  login('123')
 }
 </script>

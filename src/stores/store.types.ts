@@ -1,6 +1,4 @@
 export type User = {
-  auth: false
-} | {
-  auth: true
+  auth: boolean
   email: string
 }
